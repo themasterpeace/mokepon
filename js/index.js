@@ -1,7 +1,19 @@
+//Variable Global para ataque judagores
+let ataqueJugador
+
 //Funcion que inicia al momentod e cargar todo el DOM y poder iniciar a jugar 
 function iniciarJuego(){
     let botonMascotaJugador = document.getElementById('boton-mascota')
     botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador)
+
+    let botonFuego = document.getElementById('boton-fuego')
+    botonFuego.addEventListener('click', ataqueFuego)
+    let botonAgua = document.getElementById('boton-agua')
+    botonAgua.addEventListener('click', ataqueAgua)
+    let botonTierra = document.getElementById('boton-tierra')
+    botonTierra.addEventListener('click', ataqueTierra)
+
+
 }
 
 //Funcion para poder elegir mascota del jugador 
@@ -36,6 +48,7 @@ function seleccionarMascotaJugador(){
     seleccionarMascotaEnemigo()
 }
 
+//Funcion seleccionar mascota del enemigo de forma aleatoria 
 function seleccionarMascotaEnemigo(){
    let enemigoAleatorio = aleatorio(1,6)
    let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
@@ -55,9 +68,26 @@ function seleccionarMascotaEnemigo(){
    }
 }
 
+function ataqueFuego(){
+    ataqueJugador = 'FUEGO'
+    alert(ataqueJugador)
+}
+function ataqueAgua(){
+    ataqueJugador = 'AGUA'
+    alert(ataqueJugador)
+}
+function ataqueTierra(){
+    ataqueJugador = 'TIERRA'
+    alert(ataqueJugador)
+}
+
+
 function aleatorio(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
+
+//
+
 
 
 window.addEventListener('load', iniciarJuego)
