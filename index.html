@@ -5,38 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOKEPON!</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/index.js"></script>
 </head>
 <body>
-    <H1>
-        MOKEPON! 🔥💦🌻 
-    </H1>
     <section id="seleccionar-mascota">
-        <h2>Selecciona el tipo de tu mascota:</h2>
-        <label for="hipodge">Hipodoge -> Agua</label>
-        <input type="radio" name="mascota" id="hipodoge">
-        
-        <label for="capipepo">Capipepo -> Tierra</label>
-        <input type="radio" name="mascota" id="capipepo">
-        
-        <label for="ratigueya">Ratigueya -> Fuego</label>
-        <input type="radio" name="mascota" id="ratigueya">
-        
-        <label for="langostelvis">Langostelvis -> Agua y Fuego</label>
-        <input type="radio" name="mascota" id="langostelvis">
-        
-        <label for="tucapalma">Tucapalma -> Agua y Tierra</label>
-        <input type="radio" name="mascota" id="tucapalma">
-        
-        <label for="pydos">Pydos -> Tierra y Fuego</label>
-        <input type="radio" name="mascota" id="pydos">
-        
-
+        <h1 class="titulo">
+            Mokepon 
+        </h1>
+        <h2 class="subtitulo">Selecciona el tipo de tu mascota:</h2>
+        <div class="tarjetas">
+            <label class="tarjeta-de-mokepon" for="hipodoge">
+                <p>Hipodoge -> Agua</p> 
+                <img src="./assets/hipodoge.webp" alt="Hipodoge">
+            </label>
+            <input type="radio" name="mascota" id="hipodoge">
+            
+            <label class="tarjeta-de-mokepon" for="capipepo">
+                <p>Capipepo -> Tierra</p>
+                <img src="./assets/capipepo.webp" alt="Capipepo">
+            </label>
+            <input type="radio" name="mascota" id="capipepo">
+            
+            <label class="tarjeta-de-mokepon" for="ratigueya">
+                <p>Ratigueya -> Fuego</p>
+                <img src="./assets/ratigueya.webp" alt="Ratigueya">
+            </label>
+            <input type="radio" name="mascota" id="ratigueya">
+            
+            <!-- <label class="tarjeta-de-mokepon" for="langostelvis">
+                <p>Langostelvis -> Agua y Fuego</p>
+                <img src="" alt="">
+            </label>
+            <input type="radio" name="mascota" id="langostelvis">
+            
+            <label class="tarjeta-de-mokepon" for="tucapalma">
+                <p>Tucapalma -> Agua y Tierra</p>
+                <img src="" alt="">
+            </label>
+            <input type="radio" name="mascota" id="tucapalma">
+            
+            <label class="tarjeta-de-mokepon" for="pydos">
+                <p>Pydos -> Tierra y Fuego</p>
+                <img src="" alt="">
+            </label>
+            <input type="radio" name="mascota" id="pydos"> -->
+        </div>
         <button id="boton-mascota" onclick="">SELECCIONAR:</button>
 
     </section>
 
     <section id="seleccionar-ataque">
+        <h1 class="titulo">
+            MOKEPON! 🔥💦🌻 
+        </h1>
         <h2>Selecciona tu ataque:</h2>
 
         <p>Tu mascota <span id="mascota-jugador"></span> tiene <span  id="vidas-jugador">3</span>  vidas</p>
@@ -54,6 +76,9 @@
     </section>
 
     <section id="reiniciar">
+        <h1 class="titulo">
+            MOKEPON! 🔥💦🌻 
+        </h1>
         <button id="boton-reiniciar">REINICIAR</button>
     </section>
     
