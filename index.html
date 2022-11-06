@@ -32,55 +32,39 @@
                 <img src="./assets/ratigueya.webp" alt="Ratigueya">
             </label>
             <input type="radio" name="mascota" id="ratigueya">
-            
-            <!-- <label class="tarjeta-de-mokepon" for="langostelvis">
-                <p>Langostelvis -> Agua y Fuego</p>
-                <img src="" alt="">
-            </label>
-            <input type="radio" name="mascota" id="langostelvis">
-            
-            <label class="tarjeta-de-mokepon" for="tucapalma">
-                <p>Tucapalma -> Agua y Tierra</p>
-                <img src="" alt="">
-            </label>
-            <input type="radio" name="mascota" id="tucapalma">
-            
-            <label class="tarjeta-de-mokepon" for="pydos">
-                <p>Pydos -> Tierra y Fuego</p>
-                <img src="" alt="">
-            </label>
-            <input type="radio" name="mascota" id="pydos"> -->
         </div>
         <button id="boton-mascota" onclick="">SELECCIONAR:</button>
 
     </section>
-
     <section id="seleccionar-ataque">
         <h1 class="titulo">
-            MOKEPON! 🔥💦🌻 
+            Mokepon 
         </h1>
-        <h2>Selecciona tu ataque:</h2>
-
-        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span  id="vidas-jugador">3</span>  vidas</p>
-        <p>La mascota <span id="mascota-enemigo"></span> de tu rival tiene <span id="vidas-enemigo">3</span>  vidas</p>
-
-        <p>
-            <button id="boton-fuego">FUEGO 🔥</button>
-            <button id="boton-agua">AGUA 💦</button>
-            <button id="boton-tierra">TIERRA 🌻</button>
-        </p>
-    </section>
-    <section id="mensajes">
-       
+        <h2 class="subtitulo">Selecciona tu ataque: </h2>
+        <div>
+            <button id="boton-fuego" class="boton-de-ataque">FUEGO 🔥</button>
+            <button id="boton-agua" class="boton-de-ataque">AGUA 💦</button>
+            <button id="boton-tierra" class="boton-de-ataque">TIERRA 🌻</button>
+        </div>
         
-    </section>
+       
+        <div id="mensajes">
+            <p id="resultado">Mucha suerte: </p>
+            
+            <section id="reiniciar">                
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+        </div> 
 
-    <section id="reiniciar">
-        <h1 class="titulo">
-            MOKEPON! 🔥💦🌻 
-        </h1>
-        <button id="boton-reiniciar">REINICIAR</button>
-    </section>
-    
+            
+        
+
+        <div>
+            <div id="ataques-del-jugador"></div>
+            <div id="ataques-del-enemigo"></div>
+            <p>Has elegido a: <span id="mascota-jugador"></span> que tiene: <span  id="vidas-jugador">3</span>  vidas</p>
+            <p>La mascota <span id="mascota-enemigo"></span> de tu rival tiene <span id="vidas-enemigo">3</span>  vidas</p>
+        </div>
+    </section>    
 </body>
 </html>
