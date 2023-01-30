@@ -23,13 +23,15 @@
     </section>
     <!-- Seccion del mapa para las batallas  -->
     <section id="ver-mapa">
-        <h1 class="titulo">Recorre la ciudad con tu Mokepon </h1>
+        <h2 class="titulo">Recorre la ciudad con tu Mokepon </h2>
         <canvas id="mapa"></canvas>
        
-            <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>    
-            <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
-            <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
-            <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+            <div>
+                <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+                <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+                <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+            </div>    
     </section>
     <!-- Seleccionando ataque del mokepon -->
     <section id="seleccionar-ataque">
@@ -63,6 +65,6 @@
             </div>  
         </div>
     </section>  
-    <script src="./js/index.js"></script>  
+    <script src="./js/mokepon.js"></script>  
 </body>
 </html>
